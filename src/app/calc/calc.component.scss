@@ -1,0 +1,64 @@
+.calc {
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+
+    border: 1px solid black;
+    border-radius:30px ;
+    width: fit-content;
+    padding: 75px;
+
+    &__container{
+        display:  flex;
+        flex-direction: row;
+        
+        gap: 15px;
+    }
+
+    &__input{
+        font-size: 23px;
+        font-weight: bold;
+
+        outline: none;
+        border: none;
+        border-bottom: 1px solid black;
+    }
+
+    &__select{
+        outline: none;
+        font-size: 17px;
+        font-weight: bold;
+        width: 45px;
+    }
+    &__result{
+        span {
+            outline: none;
+            font-weight: bold;
+            width: fit-content;
+            height: 25px;
+            font-size: 15px;
+            border: 1px solid black;
+            border-radius: 20px;
+        }
+    }
+    
+    &__btn{
+        outline: none;
+        
+        width: fit-content;
+        height: 70px;
+        font-size: 17px;
+        font-weight: bold;
+        border: 1px solid black;
+        border-radius: 50px;
+        background-color: transparent;
+        &:hover{
+            background-color: antiquewhite;
+        }
+        &:active{
+            transform: scale(1.1);
+        }
+    }
+
+}
